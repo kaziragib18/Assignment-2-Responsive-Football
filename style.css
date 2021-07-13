@@ -1,0 +1,278 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* NAV CSS */
+
+.top-section {
+    justify-content:space-between;
+    background: #562EFF;
+}
+.football-blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    margin-left: 10px;
+}
+.blog{
+    display: flex;
+}
+
+.blog-info{
+    margin-bottom: 200px;
+    margin-right: 102px;
+}
+
+.section-title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    margin: 207px 0px 0px 136px; 
+    color: #FFFFFF;
+    padding-right: 100px;
+}
+
+.button-design{
+    color: #9F9F9F;
+    font-size: 16px;
+    padding-left: 24%;
+    transition: all 1s;
+}
+
+.button-design:hover{
+    transform: scale(1.1);
+}
+
+.button{   
+    text-decoration: none;
+    background: #E02C6D;
+    padding: 10px 30px;
+    color: rgb(255, 253, 253);
+    font-weight: 500;
+   
+}
+
+.top-banner{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 200px;
+    transition: all 1s;
+}
+.top-banner:hover{
+    transform: scale(1.1);
+}
+
+ 
+
+/* ------------football Player Style--------- */
+.container-player{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 70px;
+   
+
+}
+.football{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+h3.player-name{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+.football-id{
+    margin-right: 10px;
+
+}
+.football-card{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 4%;
+    margin: 1%; 
+    width: 80%;
+    height: 90%;
+    transition: all 1.5s;
+}
+
+.football-card:hover{
+    transform: scale(1.1);
+
+}
+.football-id {
+    width: 100%;
+    height: 100%;
+    
+}
+.football-banner img{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+p.football-id{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+    
+}
+/* ---------New Highlight Section----- */
+
+.section-title-highlight{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    margin: 207px 100px 0px 136px; 
+    color: #0A0826;
+    padding-right: 100px;
+    
+}
+
+.text-highlight{
+    font-size: 16px;
+    line-height: 28px;
+    margin: 10px 0px 30px 140px; 
+    padding-right: 100px;
+    color: #6C6C6C;
+}
+.match-banner{
+    margin-top: 40px;
+    width: 567px;
+    height: 427px;
+    margin-top: 200px;
+    transition: all 1s;
+}
+
+/* -------video---------*/
+.container-iframe{
+    width: 970px;
+    height: 550px;
+    padding: 30px ;
+    border-radius: 10px;
+    margin-bottom: 120px;
+}
+.video{
+    width: 100%;
+    height: 100%;
+   
+}
+.responsive-iframe {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+} 
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 65px;
+    color: #18191F;
+}
+
+
+/* ---------Footer---------- */
+footer{
+    margin-block:initial;
+    color: rgb(2, 2, 2);
+}
+.footer-logo{
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+
+}
+.footer-text{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 63px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: rgb(87, 86, 86);
+    
+}
+span{
+    padding: 10px;
+}
+
+
+
+
+/* Media Queries */
+/* For Mobile devices */
+
+@media only screen and (max-width:688px) {
+    .top-section, .container-football, .container-iframe {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .players { 
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .blogs, .football{ 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{  
+        flex-direction: column;
+    }
+    
+
+}
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .top-section, .container-football, .container-iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs, .football{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blog{  
+        flex-direction: column;
+    }
+   
+}
