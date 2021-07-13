@@ -47,6 +47,7 @@ main{
 .button-design{
     color: #9F9F9F;
     font-size: 16px;
+    margin-top: 27px;
     padding-left: 24%;
     transition: all 1s;
 }
@@ -67,7 +68,7 @@ main{
 .top-banner{
     width: 556.01px;
     height: 438px;
-    margin-top: 200px;
+    margin-top: 150px;
     transition: all 1s;
 }
 .top-banner:hover{
@@ -102,6 +103,10 @@ h3.player-name{
     font-size: 28px;
     line-height: 40px;
     color: #18191F;
+}
+.player-name{
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 .football-id{
     margin-right: 10px;
