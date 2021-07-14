@@ -12,8 +12,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
-/* NAV CSS */
-
+/* ----------Top blog starts here --------*/
 .top-section {
     justify-content:space-between;
     background: #562EFF;
@@ -27,11 +26,12 @@ main{
 }
 .blog{
     display: flex;
+    
 }
 
 .blog-info{
     margin-bottom: 50px;
-    margin-right: 102px;
+    
 }
 
 .section-title{
@@ -39,6 +39,7 @@ main{
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
+    line-height:75px;
     margin: 207px 0px 0px 136px; 
     color: #FFFFFF;
     padding-right: 100px;
@@ -66,18 +67,18 @@ main{
 }
 
 .top-banner{
-    width: 556.01px;
-    height: 438px;
+    width: 500px;
+    height: 400px;
     margin-top: 150px;
+    margin-left: 100px;
     transition: all 1s;
 }
 .top-banner:hover{
     transform: scale(1.1);
 }
 
- 
-
 /* ------------football Player Style--------- */
+
 .container-player{
     width: 100%;
     height: 100%;
@@ -217,8 +218,8 @@ h2{
     width: 100%;
     height:100%;
     margin-top: 50px;
-    padding:70px;
-    background-color: #d1d1da;
+    padding-bottom: 20px;
+   
 }
 .container {
     width: 80%;
@@ -338,11 +339,50 @@ span{
 /* For Mobile devices */
 
 @media only screen and (max-width:688px) {
-    .top-section, .container-football, .container-iframe {
+    .top-section, .container-football, .container-iframe{
         width: 100%;
         height: 100%;
         justify-content: center;
         align-items: center;
+    }
+    
+    .top-blogs, blog{
+        width: 100%;
+        height: 100%;
+    
+    }
+    .blog-info{
+        width: 100%;
+        margin-right: 40%;
+    }
+
+    .section-title, .section-title-highlight{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0px 0px 0px;
+        font-size: 60px;
+
+    }
+    .text-highlight{
+        margin: 30px 0px 0px 0px ;
+        
+    }
+    .button-design{
+        padding:0%;
+        margin-top: 40px;
+    }
+    .top-banner{
+        width: 60%;
+        height: 80%;
+        margin: 30px 0px 0px 30px;
+        
+    }
+
+    .match-banner{
+        width: 87%;
+        height: 70%;
+        margin-top: 80px;
     }
     .players { 
         grid-template-columns: repeat(2, 1fr);
@@ -354,6 +394,7 @@ span{
     .player, .blog{  
         flex-direction: column;
     }
+    
     
 
 }
@@ -372,7 +413,11 @@ span{
     .player, .blog{  
         flex-direction: column;
     }
-   
+    .match-banner{
+        width: 122%;
+        height: 100%;
+        margin-top: 80px;
+    }
 }
 
 
