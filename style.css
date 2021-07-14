@@ -31,7 +31,6 @@ main{
 
 .blog-info{
     margin-bottom: 120px;
-    
 }
 
 .section-title{
@@ -394,6 +393,11 @@ span{
     .player, .blog{  
         flex-direction: column;
     }
+    .responsive-iframe{
+        width: 360px;
+        height: 440px;
+    
+    }
 }
 /* ---------Tablet Devices ---------*/
 
@@ -416,7 +420,11 @@ span{
         height: 100%;
         margin-top: 80px;
     }
+    .responsive-iframe{
+        width: 90%;
+        height: 600px;
+        
 }
 
-
+}
 
